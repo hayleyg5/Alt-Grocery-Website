@@ -74,13 +74,15 @@
 		Add to cart
 	</button>
 	<br>
-	<button id="back" type="button" class="block" onclick="openInfo(event, 'Personal Information')">
-		Back
-	</button>
 	<br>
-	<button id="next" type="button" class="block" onclick="openInfo(event, 'Shopping Cart')">
-		Next
-	</button>
+	<div id="Buttons">
+		<button id="back" type="button" class="block" onclick="openInfo(event, 'Personal Information')">
+			Back
+		</button>
+		<button id="next" type="button" class="block" onclick="openInfo(event, 'Shopping Cart')">
+			Next
+		</button>
+	</div>
 </div>
 
 <div id="Shopping Cart" class="tabcontent">
@@ -88,7 +90,7 @@
   <p>Here are the items in your shopping cart:</p>
   <div id="displayCart"></div>
   <br>
-  <button id="back" type="button" class="block" onclick="openInfo(event, 'Personal Information')">
+  <button id="back" type="button" class="block" onclick="openInfo(event, 'Products')">
 	Back
   </button>
 </div>
