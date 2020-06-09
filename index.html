@@ -23,10 +23,10 @@
   <button class="tablinks" onclick="openInfo(event, 'Personal Information')">Step 1: Enter Personal Information 
 	  <span>&#10148;</span>
 	</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Step 2: Choose Products 
+  <button class="tablinks">Step 2: Choose Products 
 	  <span>&#10148;</span>
 	</button>
-  <button class="tablinks" onclick="openInfo(event, 'Shopping Cart')">Step 3: View Shopping Cart 
+  <button class="tablinks">Step 3: View Shopping Cart 
 	  <span>&#10148;</span>
 	</button>
 </div>
@@ -56,6 +56,12 @@
 	<option value="Organic">Organic Food</option>
 	<option value="No preference">No preference</option>
 	</select>
+	
+	<br>
+	
+	<button id="next" type="button" class="block" onclick="openInfo(event, 'Products')">
+		Next
+	</button>
 </div>
 
 <div id="Products" class="tabcontent">
@@ -67,12 +73,24 @@
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add to cart
 	</button>
+	<br>
+	<button id="back" type="button" class="block" onclick="openInfo(event, 'Personal Information')">
+		Back
+	</button>
+	<br>
+	<button id="next" type="button" class="block" onclick="openInfo(event, 'Shopping Cart')">
+		Next
+	</button>
 </div>
 
 <div id="Shopping Cart" class="tabcontent">
   <h3>Shopping Cart</h3>
   <p>Here are the items in your shopping cart:</p>
   <div id="displayCart"></div>
+  <br>
+  <button id="back" type="button" class="block" onclick="openInfo(event, 'Personal Information')">
+	Back
+  </button>
 </div>
 
 <script src="groceries.js"></script>
