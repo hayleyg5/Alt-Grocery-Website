@@ -7,6 +7,10 @@ body {
   height: 800px; 
 }
 
+span {
+  content: "\27A4";
+}
+
 .header h1 {
   position: relative;
   color: rgb(255, 255, 255);
@@ -16,7 +20,7 @@ body {
 .subheader h2 {
   position: relative;
   color: rgb(255, 255, 255);
-  background-color: rgb(255, 255, 0);
+  background-color: rgb(252, 226, 5);
   font-size: 16px;
 }
 
