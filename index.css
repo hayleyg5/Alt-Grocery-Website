@@ -38,6 +38,7 @@ span {
 .welcome h3 {
   position: relative;
   color: rgb(34, 139, 34);
+  font-size: 22px
 }
 
 /* Style the tab */
@@ -56,6 +57,7 @@ span {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-size: 20px
 }
 
 /* Change background color of buttons on hover */
@@ -74,6 +76,7 @@ span {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  font-size: 18px
 }
 
 #signature {
