@@ -7,10 +7,6 @@ body {
   height: 800px; 
 }
 
-span {
-  content: "\27A4";
-}
-
 .header {
   background-color: rgb(34, 139, 34);
   height: 50px;
@@ -103,6 +99,18 @@ span {
   background-color: white;
   display: none;
   overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .navBut button {
