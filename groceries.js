@@ -4,11 +4,12 @@
 
 var products = [
 	{
-		name: "Banana",
+		name: "Apple",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99
+		price: 1.99,
+		image: "https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg"
 	},
 	{
 		name: "Grapes",
@@ -28,7 +29,7 @@ var products = [
 		name: "Sweet Potato",
 		vegetarian: true,
 		glutenFree: true,
-		organic: organic,
+		organic: true,
 		price: 2.49
 	},
 	{
@@ -106,7 +107,7 @@ function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+			product_names.push(prods[i].name, prods[i].price, prods[i].image);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
