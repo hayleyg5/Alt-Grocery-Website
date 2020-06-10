@@ -86,6 +86,7 @@ body {
   border: none;
   outline: none;
   transition: 0.4s;
+  font-size: 18px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -103,7 +104,7 @@ body {
 
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 18px;
   color: #777;
   float: right;
   margin-left: 5px;
