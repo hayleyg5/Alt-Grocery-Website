@@ -49,7 +49,7 @@
 	
 	<br> 
 	
-	Select your preference: <br>
+	Select your preference:
       	<input type="radio" name="content" value="content">Organic
 	<input type="radio" name="content" value="content">No preference
 	
@@ -64,6 +64,16 @@
 <div id="Products" class="tabcontent">
   <h3>Step 2: Choose Products</h3>
   <p>These products were selected for you based on your restrictions and preferences:</p>
+	Select a food group:	
+      		<select id="category" name="category" onchange="populateListProductChoices(this.id, 'displayProduct')">
+		<option value=""></option>
+		<option value="Fruit">Fruit</option>
+    		<option value="Vegetables">Vegetables</option>
+		<option value="Dairy">Dairy</option>
+    		<option value="Grains">Grains</option>
+		<option value="Protein">Protein</option>
+		</select>
+	<br>
 	 Choose items to add to your cart:
 	 <div id="displayProduct"></div>
 	 <div id="displayOrganic"></div>
