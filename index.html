@@ -64,18 +64,34 @@
 <div id="Products" class="tabcontent">
   <h3>Step 2: Choose Products</h3>
   <p>These products were selected for you based on your restrictions and preferences:</p>
-	Select a food group:	
-      		<select id="category" name="category" onchange="populateListProductChoices(this.id, 'displayProduct')">
-		<option value=""></option>
-		<option value="Fruit">Fruit</option>
-    		<option value="Vegetables">Vegetables</option>
-		<option value="Dairy">Dairy</option>
-    		<option value="Grains">Grains</option>
-		<option value="Protein">Protein</option>
-		</select>
-	<br>
 	 Choose items to add to your cart:
-	 <div id="displayProduct"></div>
+	 <div id="displayProduct">
+		<button class="accordion">Fruits</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Vegetables</button>
+		<div class="panel">
+		 <p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Dairy</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Grains</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Protein</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div>
+	</div>
+	
 	 <div id="displayOrganic"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add to cart
