@@ -109,7 +109,7 @@ body {
   margin-left: 5px;
 }
 
-.active:after {
+.active, .accordion:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
