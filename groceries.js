@@ -12,7 +12,7 @@ var products = [
 		image: "https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg"
 	},
 	{
-		name: "Grapes",
+		name: "Banana",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -105,9 +105,13 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
+	
 	for (let i=0; i<prods.length; i+=1) {
+		var img = document.createElement('img');
+  		img.src=prods[i].image;
+		
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name + ": " + prods[i].price + prods[i].image);
+			product_names.push(prods[i].name + ": " + prods[i].price + img);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
