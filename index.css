@@ -79,6 +79,14 @@ span {
   font-size: 18px;
 }
 
+.navBut button {
+  font-size: 16px;
+}
+
+.addCart button {
+  font-size: 16px;
+}
+
 #signature {
   text-align: left;
   color: rgb(34, 139, 34);
