@@ -63,55 +63,59 @@
 
 <div id="Products" class="tabcontent">
   <h3>Step 2: Choose Products</h3>
-	 Choose items to add to your cart:
+	 Browse items:
 	<div id="accordionList">
 		<button class="accordion">Fruits</button>
 		<div class="panel">
-			<ul>
-    				<li>Apple<img src="images/apple.png" width="25" height="25"/></li>
-	    			<li>Cheese</li>
-			</ul>
-			
-		<input type="checkbox" name="content" value="content">Apple
-			<img src="images/apple.png" width="25" height="25"/><br>
-		<input type="checkbox" name="content" value="content">Orange
-			<img src="images/orange.png" width="25" height="25"/><br>
-		<input type="checkbox" name="content" value="content">Lemon
-			<img src="images/lemon.png" width="25" height="25"/><br>
+		<ul>
+			<li>Apple<img src="images/apple.png" width="25" height="25"/></li>
+			<li>Orange<img src="images/orange.jpg" width="25" height="25"/></li>
+			<li>Lemon<img src="images/lemon.jpg" width="25" height="25"/></li>
+		</ul>
 		</div>
 
 		<button class="accordion">Vegetables</button>
 		<div class="panel">
 		 <input type="checkbox" name="content" value="content">Sweet Potato
-			<img src="images/sweetpot.png" width="25" height="25"/><br>
+			<img src="images/sweetpot.jpg" width="25" height="25"/><br>
 		 <input type="checkbox" name="content" value="content">Green Beans<br>
+		<ul>
+			<li>Sweet Potato<img src="images/sweetpot.jpg" width="25" height="25"/></li>
+			<li>Green Beans<img src="images/orange.jpg" width="25" height="25"/></li>
+		</ul>
 		</div>
 
 		<button class="accordion">Dairy</button>
 		<div class="panel">
-		 <input type="checkbox" name="content" value="content">Milk<br>
-		 <input type="checkbox" name="content" value="content">Cheddar Cheese<br>
+		 <ul>
+			<li>Milk<img src="images/sweetpot.jpg" width="25" height="25"/></li>
+			<li>Cheddar Cheese<img src="images/orange.jpg" width="25" height="25"/></li>
+		</ul>
 		</div>
 
 		<button class="accordion">Grains</button>
 		<div class="panel">
-		 <input type="checkbox" name="content" value="content">Bread<br>
-		 <input type="checkbox" name="content" value="content">Pasta<br>
-		 <input type="checkbox" name="content" value="content">Muffin<br>
+		 <ul>
+			<li>Bread<img src="images/apple.png" width="25" height="25"/></li>
+			<li>Pasta<img src="images/orange.jpg" width="25" height="25"/></li>
+			<li>Muffin<img src="images/lemon.jpg" width="25" height="25"/></li>
+		</ul>
 		</div>
 
 		<button class="accordion">Protein</button>
 		<div class="panel">
-		 <input type="checkbox" name="content" value="content">Salmon<br>
-		 <input type="checkbox" name="content" value="content">Chicken<br>
-		 <input type="checkbox" name="content" value="content">Ground Beef<br>
+		 <ul>
+			<li>Salmon<img src="images/apple.png" width="25" height="25"/></li>
+			<li>Chicken<img src="images/orange.jpg" width="25" height="25"/></li>
+			<li>Ground Beef<img src="images/lemon.jpg" width="25" height="25"/></li>
+		</ul>
 		</div>
 		
-		<button class="accordion">For You</button>
-		<div class="panel">
-		<p>These products were selected for you based on your restrictions and preferences:</p>
-			<div id="displayProduct"></div>
-		</div>
+		<br>
+		
+		<p>These products were selected for you based on your restrictions and preferences. 
+			Choose items to add to your cart:</p>
+		<div id="displayProduct"></div>
 		
 		<script>
 		var acc = document.getElementsByClassName("accordion");
