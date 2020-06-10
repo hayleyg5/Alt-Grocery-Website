@@ -8,8 +8,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99,
-		image: "https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg"
+		price: 1.99
 	},
 	{
 		name: "Orange",
@@ -111,7 +110,7 @@ function restrictListProducts(prods, restriction) {
   		img.src=prods[i].image;
 		
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name + ": " + prods[i].price);
+			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
